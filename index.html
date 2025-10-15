@@ -1,149 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NutriGo Kitchen — Healthy Made Simple</title>
-  <meta name="description" content="NutriGo Kitchen: ready-to-heat meals and prep kits for busy people. Local ingredients, nutritious menus, eco-friendly packaging." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NutriGo Kitchen – Healthy Meal Prep Service</title>
   <style>
-    /* Simple, clean CSS — change colors if you like */
-    :root{
-      --accent:#2f8f6a;
-      --accent-dark:#256e51;
-      --muted:#666;
-      --maxw:900px;
-      --pad:18px;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #fefdf8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
-    body{margin:0;background:#f7f7f6;color:#111}
-    header{background:linear-gradient(90deg,var(--accent),#60b583);color:#fff;padding:40px 16px}
-    .wrap{max-width:var(--maxw);margin:0 auto;padding:var(--pad)}
-    h1{margin:0;font-size:1.6rem}
-    p.lead{margin:14px 0 0;font-weight:600}
-    .hero{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-top:18px}
-    .hero img{width:320px;max-width:46%;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
-    main{padding:28px 16px}
-    section{background:#fff;border-radius:10px;padding:20px;margin-bottom:18px;box-shadow:0 6px 18px rgba(0,0,0,.04)}
-    .small{color:var(--muted);font-size:.95rem}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    @media (max-width:720px){.grid{grid-template-columns:1fr}.hero img{max-width:100%;width:100%}}
-    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
-    .meta{font-size:.9rem;color:var(--muted);margin-bottom:8px}
-    .testimonial{border-left:4px solid var(--accent);padding:10px 14px;background:#fbfff9}
-    footer{padding:18px 16px;text-align:center;color:var(--muted);font-size:.9rem}
-    form label{display:block;margin:10px 0 6px;font-weight:600}
-    input, textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:8px}
-    .muted{color:var(--muted)}
+    header {
+      background-color: #6db36d;
+      color: #fff;
+      text-align: center;
+      padding: 2em 1em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    section {
+      padding: 2em 10%;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #4b6043;
+      border-bottom: 2px solid #cde0c9;
+      padding-bottom: 0.3em;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 1.5em 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 1.5em;
+    }
+    form {
+      margin-top: 2em;
+      background: #f0f5f0;
+      padding: 1.5em;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8em;
+      margin-top: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      font-family: inherit;
+    }
+    button {
+      margin-top: 1.5em;
+      background-color: #6db36d;
+      color: white;
+      border: none;
+      padding: 0.8em 1.5em;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #5a995b;
+    }
+    footer {
+      background: #4b6043;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <h1>NutriGo Kitchen — Healthy Made Simple</h1>
-      <p class="lead">Fuel your life—one healthy meal at a time. Fresh, chef-crafted ready-to-heat meals and prep kits delivered locally.</p>
 
-      <div class="hero" aria-hidden="false">
-        <img src="nutrigo-hero-placeholder.jpg" alt="NutriGo Kitchen meals on a counter: bowls, colorful vegetables, labeled containers" id="heroImg" />
-        <div>
-          <p class="small">Locally sourced • Eco-friendly packaging • Gluten-free & allergen options</p>
-          <p style="margin-top:12px">NutriGo Kitchen solves the daily dinner stress—nutritious, ready-in-minutes meals for busy families, professionals, and people managing health conditions.</p>
-          <p style="margin-top:12px"><a class="cta" href="#order">Try a sample box →</a></p>
-        </div>
-      </div>
-    </div>
+  <header>
+    <h1>NutriGo Kitchen</h1>
+    <p>Healthy, prepped meals for busy individuals and families.</p>
   </header>
 
-  <main class="wrap">
-    <!-- Personal Experience + Testimonial -->
-    <section aria-labelledby="aboutTitle">
-      <h2 id="aboutTitle">Our Story — Personal Experience</h2>
-      <p class="small">Founder: Penélope Farías — Chef & community advocate</p>
-      <p>I created NutriGo Kitchen after years of juggling family life and work in a small town with limited healthy takeout. I wanted meals that respected dietary needs, tasted great, and were simple to prepare. That became a mission: make nutritious eating effortless for people who are short on time but long on standards.</p>
+  <section id="lead">
+    <h2>Lead Paragraph</h2>
+    <p><strong>NutriGo Kitchen</strong> makes eating healthy effortless. Whether you’re a working parent, a student, or someone managing a chronic illness, our ready-to-cook, portioned meals save you time without compromising nutrition. Locally sourced ingredients and chef-designed menus make every dish fresh, balanced, and satisfying.</p>
+  </section>
 
-      <div class="testimonial" role="note" aria-label="Customer testimonial">
-        <p><strong>“NutriGo has changed our evenings. The kids eat better, and I spend less time cooking. The meals are fresh, flavorful, and actually filling.”</strong></p>
-        <p class="muted">— Isabel R., working mother of two</p>
-      </div>
-    </section>
+  <section id="image">
+    <h2>Our Meals</h2>
+    <!-- Replace this image URL after uploading -->
+    <img src="https://github.com/yourusername/nutrigokitchen/raw/main/nutrigo-meals.jpg" alt="NutriGo Kitchen Healthy Meal Prep">
+    <p>Each weekly box includes delicious, portion-controlled meals labeled by day and calories. Choose from balanced, high-protein, or vegetarian plans and enjoy convenience without compromise.</p>
+  </section>
 
-    <!-- Main body: product details -->
-    <section aria-labelledby="productTitle">
-      <h2 id="productTitle">Product & Service Details</h2>
-      <p><strong>What we offer:</strong></p>
-      <div class="grid">
-        <div>
-          <h3>Ready-to-Heat Meals</h3>
-          <p>Fully cooked, microwave or oven-ready in under 5 minutes. Balanced portions with clear nutrition info (calories, macros).</p>
-          <ul>
-            <li>High Protein Power Bowl</li>
-            <li>Vegan Glow Salad</li>
-            <li>Low-Sodium Comfort Stew</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Prep Kits</h3>
-          <p>Pre-portioned ingredients + step-by-step cards — perfect for teens and families learning to cook.</p>
-        </div>
-      </div>
+  <section id="experience">
+    <h2>Personal Experience</h2>
+    <p>I founded <strong>NutriGo Kitchen</strong> after struggling to maintain a healthy diet while working full-time. Cooking nutritious meals daily became overwhelming, and most takeout options weren’t health-conscious. That’s when I decided to create a solution that makes healthy eating accessible, quick, and enjoyable.</p>
+    <p><strong>Customer Testimonial:</strong> “NutriGo Kitchen completely changed my weekday routine! I save hours every week and feel more energized knowing I’m eating balanced meals. Even my teen loves assembling them!” — <em>Sandra, working mom of two</em></p>
+  </section>
 
-      <p style="margin-top:12px">Technical & logistics: eco-friendly recyclable containers, refrigeration-safe packaging, allergen labeling. Subscriptions (weekly/biweekly/monthly) and one-off orders. Local delivery and community pick-up points available.</p>
+  <section id="main">
+    <h2>About Our Product</h2>
+    <p>Our meals are available in weekly subscription plans ranging from 5 to 15 portions. Every meal is:</p>
+    <ul>
+      <li>Fully portioned with complete nutritional information</li>
+      <li>Prepared from fresh, local ingredients</li>
+      <li>Delivered ready to cook in under 10 minutes</li>
+      <li>Available in gluten-free, vegetarian, and high-protein versions</li>
+    </ul>
 
-      <p class="small">Contact: <a href="mailto:info@nutrigokitchen.com">info@nutrigokitchen.com</a> • Phone: +34 600 123 456 • Oviedo, Asturias</p>
-    </section>
+    <h3>Contact Us</h3>
+    <p>If you’d like to learn more, collaborate, or sign up for updates, please fill out the form below.</p>
 
-    <!-- Discussion question -->
-    <section aria-labelledby="questionTitle">
-      <h2 id="questionTitle">We want your input</h2>
-      <p>Healthy convenience is personal. <strong>What matters most to you when choosing ready-made meals: affordability, nutrition, taste, or sustainability?</strong> Tell us which factor is #1 and which is #2, and why.</p>
+    <form action="https://formspree.io/f/mwkzldkd" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
 
-      <form id="feedbackForm" onsubmit="event.preventDefault(); alert('Thanks — your response would be submitted in a live version.');">
-        <label for="name">Your name</label>
-        <input id="name" name="name" placeholder="Jane Doe" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
 
-        <label for="choice">Top factors (rank 1–2)</label>
-        <input id="choice" name="choice" placeholder="e.g., 1 Nutrition, 2 Taste" required />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
 
-        <label for="comments">Why? (short)</label>
-        <textarea id="comments" name="comments" rows="4" placeholder="Because..."></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-        <p style="margin-top:10px"><button class="cta" type="submit">Send feedback</button></p>
-      </form>
-    </section>
-
-    <section aria-labelledby="order" id="order">
-      <h2 id="orderTitle">Sample Offer</h2>
-      <p>First-time customers: use code <strong>TRYNUTRI10</strong> for 10% off a sample box (5 meals). Delivery within 10km of Oviedo.</p>
-    </section>
-  </main>
+  <section id="question">
+    <h2>Discussion Question</h2>
+    <p>We’d love your feedback! If NutriGo Kitchen were available in your city, what type of meal plan would you prefer — family-sized portions, fitness-focused meals, or ready-to-go lunch boxes?</p>
+  </section>
 
   <footer>
-    <div class="wrap">
-      <p class="small">© NutriGo Kitchen • Made locally • Follow us: @nutrigokitchen</p>
-    </div>
+    <p>© 2025 NutriGo Kitchen | Healthy Food, Simplified</p>
   </footer>
 
-  <script>
-    // Replace placeholder image if not present: load a simple SVG generated placeholder
-    (function(){
-      var img = document.getElementById('heroImg');
-      function exists(url, cb){
-        var xhr = new XMLHttpRequest();
-        xhr.open('HEAD', url);
-        xhr.onload = function(){ cb(xhr.status < 400); };
-        xhr.onerror = function(){ cb(false); };
-        xhr.send();
-      }
-      exists(img.src, function(ok){
-        if(!ok){
-          img.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(
-            '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">' +
-            '<rect width="100%" height="100%" fill="#e6f5ee"/>' +
-            '<text x="50%" y="50%" font-size="22" text-anchor="middle" fill="#256e51" font-family="Arial">NutriGo Kitchen image placeholder</text>' +
-            '</svg>'
-          );
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
